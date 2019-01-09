@@ -13,6 +13,12 @@
 		71957FF321E60446007B33B0 /* Prepopulate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71957FF121E60446007B33B0 /* Prepopulate.xcdatamodeld */; };
 		71957FF521E60447007B33B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71957FF421E60447007B33B0 /* Assets.xcassets */; };
 		71957FF821E60447007B33B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71957FF621E60447007B33B0 /* LaunchScreen.storyboard */; };
+		7195800621E60900007B33B0 /* Seed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7195800321E60900007B33B0 /* Seed.sqlite */; };
+		7195800721E60900007B33B0 /* Seed.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 7195800421E60900007B33B0 /* Seed.sqlite-wal */; };
+		7195800821E60900007B33B0 /* Seed.sqlite-shm in Resources */ = {isa = PBXBuildFile; fileRef = 7195800521E60900007B33B0 /* Seed.sqlite-shm */; };
+		7195800E21E614FD007B33B0 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195800C21E614FD007B33B0 /* PersonTableViewCell.swift */; };
+		7195800F21E614FD007B33B0 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7195800D21E614FD007B33B0 /* PersonTableViewCell.xib */; };
+		7195801121E6152B007B33B0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7195801021E6152B007B33B0 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		71957FF421E60447007B33B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71957FF721E60447007B33B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71957FF921E60447007B33B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7195800321E60900007B33B0 /* Seed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seed.sqlite; sourceTree = "<group>"; };
+		7195800421E60900007B33B0 /* Seed.sqlite-wal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Seed.sqlite-wal"; sourceTree = "<group>"; };
+		7195800521E60900007B33B0 /* Seed.sqlite-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seed.sqlite-shm"; sourceTree = "<group>"; };
+		7195800C21E614FD007B33B0 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		7195800D21E614FD007B33B0 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		7195801021E6152B007B33B0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		71957FE921E60446007B33B0 /* Prepopulate */ = {
 			isa = PBXGroup;
 			children = (
+				7195800B21E614EA007B33B0 /* View */,
+				7195800021E60669007B33B0 /* Database */,
+				71957FFF21E60523007B33B0 /* Model */,
 				71957FEA21E60446007B33B0 /* AppDelegate.swift */,
 				71957FEC21E60446007B33B0 /* ViewController.swift */,
 				71957FEE21E60446007B33B0 /* Main.storyboard */,
@@ -65,6 +80,33 @@
 				71957FF121E60446007B33B0 /* Prepopulate.xcdatamodeld */,
 			);
 			path = Prepopulate;
+			sourceTree = "<group>";
+		};
+		71957FFF21E60523007B33B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7195801021E6152B007B33B0 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7195800021E60669007B33B0 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7195800321E60900007B33B0 /* Seed.sqlite */,
+				7195800521E60900007B33B0 /* Seed.sqlite-shm */,
+				7195800421E60900007B33B0 /* Seed.sqlite-wal */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		7195800B21E614EA007B33B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7195800C21E614FD007B33B0 /* PersonTableViewCell.swift */,
+				7195800D21E614FD007B33B0 /* PersonTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				71957FF821E60447007B33B0 /* LaunchScreen.storyboard in Resources */,
+				7195800621E60900007B33B0 /* Seed.sqlite in Resources */,
+				7195800821E60900007B33B0 /* Seed.sqlite-shm in Resources */,
+				7195800F21E614FD007B33B0 /* PersonTableViewCell.xib in Resources */,
 				71957FF521E60447007B33B0 /* Assets.xcassets in Resources */,
 				71957FF021E60446007B33B0 /* Main.storyboard in Resources */,
+				7195800721E60900007B33B0 /* Seed.sqlite-wal in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7195801121E6152B007B33B0 /* Person.swift in Sources */,
 				71957FED21E60446007B33B0 /* ViewController.swift in Sources */,
 				71957FF321E60446007B33B0 /* Prepopulate.xcdatamodeld in Sources */,
+				7195800E21E614FD007B33B0 /* PersonTableViewCell.swift in Sources */,
 				71957FEB21E60446007B33B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HZA79NQ8N6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Prepopulate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HZA79NQ8N6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Prepopulate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
